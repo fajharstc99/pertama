@@ -1,0 +1,45 @@
+.latar {
+	color:#039370;
+	border: #039370;
+	background:#039370;
+	background-color:#039370;
+}
+a{ 
+	color:#009900;
+	cursor:pointer;
+	text-decoration:none;
+}
+
+a:hover{ 
+	color:#00FF00;
+	cursor:pointer;
+	text-decoration:blink;
+}
+
+.warna a{ 
+	color:#00FFCC;
+	cursor:pointer;
+	padding-left:10px;
+	text-decoration:none;
+}
+
+.warna a:hover{ 
+	color:#FFFFFF;
+	cursor:pointer;
+	padding-left:10px;
+	text-decoration:blink;
+}
+
+#pan a{ 
+	color:#000000;
+	cursor:pointer;
+	text-decoration:none;
+	font-weight:normal;
+}
+
+#pan a:hover{ 
+	color:#000000;
+	cursor:pointer;
+	text-decoration:blink;
+	font-weight:bold;
+}
