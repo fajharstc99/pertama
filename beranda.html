@@ -12,21 +12,59 @@
     
     <link href="css/bootstrap.min.css" rel="stylesheet">
     <link href="css/style.css" rel="stylesheet">
+    <link href="css/BootSideMenu.css" rel="stylesheet">
+	<style type="text/css">
+      .user{
+        padding:5px;
+        margin-bottom: 5px;
+      }
+    </style>   
 
+    <script src="js/jquery.min.js"></script>
+    <script src="js/bootstrap.min.js"></script>
+    <script src="js/scripts.js"></script>
+	<script src="js/BootSideMenu.js"></script>    
+    <script type="text/javascript">
+    $(document).ready(function(){
+      $('#test').BootSideMenu({side:"left", autoClose:true});
+    });
+    </script>
 </head>
-<body>
-
+<body>   
+<div id="test">
+    <div class="user">
+        <a onClick="window.location.replace('#');">
+        	<img src="icon/beranda.png" alt="Esempio" class="img-thumbnail" height="150px" width="150px">
+        </a>
+    </div>
+    <div class="tex list-group">
+    	<b><hr>
+        <a class="tex list-group-item" onClick="window.location.replace('#');">
+            <img src="icon/pengaturan.png" height="20px" width="20px">
+            Pengaturan
+        </a><hr>
+        <a class="tex list-group-item" onClick="window.location.replace('info.html');">
+            <img src="icon/info.png" height="20px" width="20px">
+            Info
+        </a><hr>
+        <a class="tex list-group-item" onClick="window.location.replace('login.html');">
+            <img src="icon/keluar.png" height="20px" width="20px">
+            Keluar
+        </a><hr>
+        </b>
+    </div>
+</div> 
 <div class="container-fluid">
 	<div class="row">
 		<div class="col-md-12">
 			<div class="row">
 				<div class="col-md-12">      
-					<nav class="navbar navbar-default navbar-fixed-top" role="navigation">
+					<nav class="latar navbar navbar-default navbar-fixed-top" role="navigation">
                         <div class="navbar-header">		
-                            <ul class="latar nav nav-tabs" style="height:70px">
+                            <ul class="nav nav-tabs" style="height:70px">
                             	<li>                                
-                                    <div class="navbar-brand toggle" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1">
-                                    <a>
+                                    <div class="navbar-brand toggle" data-toggle="collapse" data-target="#collapse1" aria-expanded="false">
+                                    <a style="cursor:default">
                                     	<img src="icon/Logo2.png" height="50px" width="50px">
                                     </a>
                                     </div>
@@ -63,7 +101,7 @@
                             </ul>
                         </div>	
 						
-						<div class="latar collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+						<!--div class="latar collapse navbar-collapse" id="collapse1">
 							<ul class="warna nav navbar-nav navbar-left" style="padding-top:10px; padding-bottom:10px">
                             	<b>
 								<li>
@@ -92,7 +130,7 @@
 								</li>
                                 </b>
 							</ul>
-						</div>						
+						</div-->						
 					</nav>
 					<div class="tabbable" id="tabs-942470">
 						<div class="tab-content" style="padding-top:80px">
@@ -190,9 +228,5 @@
 		</div>
 	</div>
 </div>
-
-    <script src="js/jquery.min.js"></script>
-    <script src="js/bootstrap.min.js"></script>
-    <script src="js/scripts.js"></script>
   </body>
 </html>
