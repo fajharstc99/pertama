@@ -32,19 +32,13 @@
 		newCode += "<div class=\"toggler\">\n";
 		newCode += "	<span class=\"glyphicon glyphicon-chevron-right\">&nbsp;</span> <span class=\"glyphicon glyphicon-chevron-left\">&nbsp;</span>\n";
 		newCode += "</div>\n";
-
-		//Mod suggested by asingh3
-		//https://github.com/AndreaLombardo/BootSideMenu/issues/1
-		
-		//this.html(newCode);
 	
     		var wrapper = $(newCode);
-		// copy the children to the wrapper.
+
 		$.each(this.children(), function () {
 			$('.panel-content', wrapper).append(this);
 		});
 
-		// Empty the element and then append the wrapper code.
 		$(this).empty();
 		$(this).append(wrapper);
 
@@ -100,8 +94,8 @@
 	$(document).on('click','.toggler', function(){
 		var toggler = $(this);
 		var container = toggler.parent();
-		//var listaClassi = container[0].classList; //Old
-		var listaClassi = $(container[0]).attr('class').split(/\s+/); //IE9 Fix - Thanks Nicolas Renaud
+
+		var listaClassi = $(container[0]).attr('class').split(/\s+/); 
 		var side = getSide(listaClassi);
 		var containerWidth = container.width();
 		var status = container.attr('data-status');
@@ -111,7 +105,6 @@
 		doAnimation(container, containerWidth, side, status);
 	});
 
-	/*Cerca un div con classe submenu e id uguale a quello passato*/
 	function searchSubMenu(id){
 		var found = false;
 		$('.submenu').each(function(){
@@ -123,7 +116,6 @@
 		return found;
 	}
 
-//restituisce il lato del sidebar in base alla classe che trova settata
 function getSide(listaClassi){
 	var side;
 	for(var i = 0; i<listaClassi.length; i++){
@@ -139,7 +131,7 @@ function getSide(listaClassi){
 	}
 	return side;
 }
-//esegue l'animazione
+
 function doAnimation(container, containerWidth, sidebarSide, sidebarStatus){
 	var toggler = container.children()[1];
 	if(sidebarStatus=="opened"){

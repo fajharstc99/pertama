@@ -1,128 +1,145 @@
 .sidebar{
-      z-index: 999999;
-      position: fixed;
-      top: -1px;
-      bottom: -1px;
-      padding:0px;
-      width: 150px;
-      background-color:#009999;
-      border: 1px solid #009999;
+  z-index: 009999;
+  position: fixed;
+  top: -1px;
+  bottom: -1px;
+  padding:0px;
+  width: 150px;
+  background-color:#009999;
+  border: 1px solid #009999;
 
 }
 
 .sidebar > .row > .col-xs-12, .sidebar > .row > .col-sm-12, .sidebar > .row > .col-md-12, .sidebar > .row > .col-lg-12{
-      padding:0px;
-      position: absolute;
-      bottom: 0px;
-      top: 0px;
-      overflow: auto;           
+  padding:0px;
+  position: absolute;
+  bottom: 0px;
+  top: 0px;
+  overflow: auto;           
 }
 
 .sidebar >.row{
-      margin:0px;
+  margin:0px;
 }
 
 .sidebar {
-      width: 150px;
+  width: 150px;
 }
 .sidebar.sidebar-left{
-      left:0px;
+  left:0px;
 }
 
 @media (min-width: 400px) {
+  .sidebar {
+		width: 150px;
+  }
+  .sidebar.sidebar-left{
+		left:0px;
+  }
 
 }
 @media (min-width: 528px) {
-      .sidebar {
-            width: 150px;
-      }
-      .sidebar.sidebar-left{
-            left:0px;
-      }
+  .sidebar {
+		width: 150px;
+  }
+  .sidebar.sidebar-left{
+		left:0px;
+  }
 }
 @media (min-width: 768px) {
-      .sidebar {
-            width: 150px;
-      }
-      .sidebar.sidebar-left{
-            left:0px;
-      }
+  .sidebar {
+		width: 150px;
+  }
+  .sidebar.sidebar-left{
+		left:0px;
+  }
 }
 @media (min-width: 992px) {
-      .sidebar {
-            width: 150px;
-      }
-      .sidebar.sidebar-left{
-            left:0px;
-      }
+  .sidebar {
+		width: 150px;
+  }
+  .sidebar.sidebar-left{
+		left:0px;
+  }
 }
 @media (min-width: 1200px) {
-      .sidebar {
-            width: 150px;
-      }
-      .sidebar.sidebar-left{
-            left:0px;
-      }
+  .sidebar {
+		width: 150px;
+  }
+  .sidebar.sidebar-left{
+		left:0px;
+  }
 }
 .toggler{
-      -webkit-background-clip: padding-box;
-      background-clip: padding-box;
-      border: 1px solid #009999;;
-      width: 20px;
-      height: 48px;
-      position: absolute;
-      top: 45%;
-      cursor: pointer;
+  -webkit-background-clip: padding-box;
+  background-clip: padding-box;
+  border: 1px solid #009999;
+  width: 35px;
+  height: 48px;
+  position: absolute;
+  top: 50%;
+  cursor: pointer;
 }
 .sidebar-left > .toggler{
-      -webkit-border-top-right-radius: 4px;
-      -webkit-border-bottom-right-radius: 4px;
-      -moz-border-radius-topright: 4px;
-      -moz-border-radius-bottomright: 4px;
-      border-top-right-radius: 4px;
-      border-bottom-right-radius: 4px;
-      border-left: 1px solid #009999;
-      -webkit-box-shadow: 1px 0px 8px rgba(0, 0, 0, .175);
-      box-shadow: 1px 0px 8px rgba(0, 0, 0, .175);
-      right: -20px;
+  -webkit-border-top-right-radius: 4px;
+  -webkit-border-bottom-right-radius: 4px;
+  -moz-border-radius-topright: 4px;
+  -moz-border-radius-bottomright: 4px;
+  border-top-right-radius: 4px;
+  border-bottom-right-radius: 4px;
+  border-left: 1px solid #009999;
+  -webkit-box-shadow: 1px 0px 8px rgba(0, 0, 0, .175);
+  box-shadow: 1px 0px 8px rgba(0, 0, 0, .175);
+  right: -35px;
 } 
 
 .sidebar-left > .toggler > span{
-      margin:15px 2px;
+  margin:15px 2px;
 }
 
 .sidebar-left > .toggler > .glyphicon-chevron-right{
-      display:none;
+  display:none;
 }
 
 
 .sidebar .submenu{
-      display: none;
-      position: fixed;
+  display: none;
+  position: fixed;
 } 
 
-/*Native BootStrap Hack*/
+
 .sidebar .list-group-item:last-child, .sidebar .list-group-item:first-child{
-      border-radius:0px;
+  border-radius:0px;
 }
 
 .sidebar .list-group{
-      margin-bottom:0px;
+  margin-bottom:0px;
 }
 .sidebar .list-group-item{
-      padding: 5px;
-      border: 1px solid #009999;
-      border-left: 0px;
-      border-right: 0px;
-      margin-bottom: 0px;
-      margin-top: -1px;
-	  background:#009999;
+  padding: 5px;
+  border: 1px solid #009999;
+  border-left: 0px;
+  border-right: 0px;
+  margin-bottom: 0px;
+  margin-top: -1px;
+  background:#009999;
 }
 .tex a{
-	  background:#009999;
-	  color:#FFFFFF;
+  background:#009999;
+  color:#FFFFFF;
+  text-decoration:none;
+  font-size:16px;
 }
 .tex a:hover{
-	  background:#009999;
-	  color:#00CC66;
+  background:#009999;
+  color:#00CC66;
+  text-decoration:blink;
+}
+#hov a{
+	background-color:#009999;
+	border:#009999;
+}
+#hov a:hover{
+	background-color:#009999;
+	border:#009999;
 }

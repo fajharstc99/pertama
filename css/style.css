@@ -43,3 +43,10 @@ a:hover{
 	text-decoration:blink;
 	font-weight:bold;
 }
+#beranda img:hover{
+	height:40px;
+	width:33px;
+}
+#beranda a:hover{
+	color:#039370;
+}
