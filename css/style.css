@@ -46,7 +46,9 @@ a:hover{
 #beranda img:hover{
 	height:40px;
 	width:33px;
+	text-decoration:blink;
 }
 #beranda a:hover{
 	color:#039370;
+	text-decoration:blink;
 }

@@ -29,31 +29,8 @@
     });
     </script>
 </head>
-<body>   
-<div class="container-fluid">
-    <div id="slidepan">
-        <div class="user">
-            <a onClick="window.location.replace('profil.html');">
-                <img src="icon/Fajar.jpg" alt="" class="img-circle" height="100px" width="100px">
-            </a>
-        </div><hr>
-        <div class="tex list-group" id="hov">
-            <b>
-            <a class="list-group-item" onClick="window.location.replace('#');">
-                <span class="tex glyphicon glyphicon-shopping-cart" aria-hidden="true"></span> Keranjang
-            </a><hr>
-            <a class="list-group-item" onClick="window.location.replace('#');">
-                <span class="tex glyphicon glyphicon-wrench" aria-hidden="true"></span> Pengaturan
-            </a><hr>
-            <a class="list-group-item" onClick="window.location.replace('info.html');">
-                <span class="tex glyphicon glyphicon-book" aria-hidden="true"></span> Info
-            </a><hr>
-            <a class="list-group-item" onClick="window.location.replace('login.html');">
-                <span class="tex glyphicon glyphicon-circle-arrow-left" aria-hidden="true"></span> Keluar
-            </a><hr>
-            </b>
-        </div>
-    </div> 
+<body>  
+<div class="container-fluid"> 
 	<div class="row">
 		<div class="col-md-12">
 			<div class="row">
@@ -68,7 +45,7 @@
                                     </a>
                                     </div>
                                 </li>
-                                <li style="padding-left:70px">
+                                <li style="padding-left:50px">
                                     <div class="navbar-brand" id="beranda">
                                         <a href="#panel-aa1" data-toggle="tab">
                                             <img src="icon/chat.png" height="40px" width="33px" class="img-responsive" alt="Responsive image" id="beranda">
@@ -156,23 +133,23 @@
                                         <h3>PRODUK</h3><hr>
                                         <div class="col-md-6">
                                             <h4 class="text-center text-success">Sayuran Hidroponik</h4>
-                                            <img class="img-rounded img-responsive" src="icon/icon.png"/><br>
+                                            <img class="img-rounded img-responsive" src="icon/sayuran.png" height="250px" width="250px"/><br>
                                             <b><a id="infosayhid">Lihat Info</a>&nbsp;&nbsp;&nbsp;|&nbsp;&nbsp;&nbsp;<a onClick="window.location.replace('produk.html');">Lihat Detail</a></b>
                                         </div><hr>
                                         <div class="col-md-6">
                                             <h4 class="text-center text-success">Daging</h4>
-                                            <img class="img-rounded img-responsive" src="icon/icon.png"/><br>
-                                            <b><a id="infodaging">Lihat Info</a>&nbsp;&nbsp;&nbsp;|&nbsp;&nbsp;&nbsp;<a onClick="window.location.replace('produk.html');">Lihat Detail</a></b>
+                                            <img class="img-rounded img-responsive" src="icon/daging.jpg" height="250px" width="250px"/><br>
+                                            <b><a id="infodaging">Lihat Info</a>&nbsp;&nbsp;&nbsp;|&nbsp;&nbsp;&nbsp;<a id="kosong1">Lihat Detail</a></b>
                                         </div><hr>
                                         <div class="col-md-6">
                                             <h4 class="text-center text-success">Makanan Jadi</h4>
-                                            <img class="img-rounded img-responsive" src="icon/icon.png"/><br>
-                                            <b><a id="infomakjad">Lihat Info</a>&nbsp;&nbsp;&nbsp;|&nbsp;&nbsp;&nbsp;<a onClick="window.location.replace('produk.html');">Lihat Detail</a></b>
+                                            <img class="img-rounded img-responsive" src="icon/makanan.jpeg" height="250px" width="250px"/><br>
+                                            <b><a id="infomakjad">Lihat Info</a>&nbsp;&nbsp;&nbsp;|&nbsp;&nbsp;&nbsp;<a id="kosong2">Lihat Detail</a></b>
                                         </div><hr>
                                         <div class="col-md-6">
                                             <h4 class="text-center text-success">Minuman</h4>
-                                            <img class="img-rounded img-responsive" src="icon/icon.png"/><br>
-                                            <b><a id="infominuman">Lihat Info</a>&nbsp;&nbsp;&nbsp;|&nbsp;&nbsp;&nbsp;<a onClick="window.location.replace('produk.html');">Lihat Detail</a></b>
+                                            <img class="img-rounded img-responsive" src="icon/minuman.jpg" height="250px" width="250px"/><br>
+                                            <b><a id="infominuman">Lihat Info</a>&nbsp;&nbsp;&nbsp;|&nbsp;&nbsp;&nbsp;<a id="kosong3">Lihat Detail</a></b>
                                         </div><hr>
                                         </center>
                                     </div>
@@ -214,7 +191,76 @@
 		</div>
 	</div>
 </div>
+
+<div id="slidepan">
+    <div class="user">
+        <a onClick="window.location.replace('profil.html');">
+            <img src="icon/Fajar.jpg" alt="" class="img-circle" height="100px" width="100px">
+        </a>
+    </div><hr>
+    <div class="tex list-group" id="hov">
+        <b>
+        <a class="list-group-item" onClick="window.location.replace('kosong.html');">
+            <span class="tex glyphicon glyphicon-shopping-cart" aria-hidden="true"></span> Keranjang
+        </a><hr>
+        <a class="list-group-item" onClick="window.location.replace('kosong.html');">
+            <span class="tex glyphicon glyphicon-wrench" aria-hidden="true"></span> Pengaturan
+        </a><hr>
+        <a class="list-group-item" onClick="window.location.replace('info.html');">
+            <span class="tex glyphicon glyphicon-book" aria-hidden="true"></span> Info
+        </a><hr>
+        <a class="list-group-item" onClick="window.location.replace('login.html');">
+            <span class="tex glyphicon glyphicon-circle-arrow-left" aria-hidden="true"></span> Keluar
+        </a><hr>
+        </b>
+    </div>
+</div>
 <!--Begin Modal-->
+<div id="viewkosong1" class="modal fade">
+    <div class="modal-dialog">
+        <div class="modal-content">
+            <div class="modal-header">
+                <button type="button" class="close" data-dismiss="modal" aria-hidden="true">&times;</button>
+                <h3 class="modal-title"><center><small><b>ZONK</b></small></center></h3>
+            </div>
+            <div class="modal-body">
+                <p align="justify">
+                    Masih kosong.
+                </p>
+            </div>
+        </div>            
+    </div>
+</div>
+<div id="viewkosong2" class="modal fade">
+    <div class="modal-dialog">
+        <div class="modal-content">
+            <div class="modal-header">
+                <button type="button" class="close" data-dismiss="modal" aria-hidden="true">&times;</button>
+                <h3 class="modal-title"><center><small><b>ZONK</b></small></center></h3>
+            </div>
+            <div class="modal-body">
+                <p align="justify">
+                    Masih kosong.
+                </p>
+            </div>
+        </div>            
+    </div>
+</div>
+<div id="viewkosong3" class="modal fade">
+    <div class="modal-dialog">
+        <div class="modal-content">
+            <div class="modal-header">
+                <button type="button" class="close" data-dismiss="modal" aria-hidden="true">&times;</button>
+                <h3 class="modal-title"><center><small><b>ZONK</b></small></center></h3>
+            </div>
+            <div class="modal-body">
+                <p align="justify">
+                    Masih kosong.
+                </p>
+            </div>
+        </div>            
+    </div>
+</div>
 <div id="viewinfosayhid" class="modal fade">
     <div class="modal-dialog">
         <div class="modal-content">
@@ -299,7 +345,7 @@
                         <h4><b>Zikran B. Yakala</b></h4>
                     </center><br>
                     <span class="glyphicon glyphicon-credit-card" aria-hidden="true"> ID0001</span><br>
-                    <span class="glyphicon glyphicon-phone" aria-hidden="true"> +62852xxxx1234</span><br>
+                    <span class="glyphicon glyphicon-phone" aria-hidden="true"> +6285241062014</span><br>
                     <span class="glyphicon glyphicon-road" aria-hidden="true"> Jl. XXXXX No. 1</span>
                 </p>
             </div>
@@ -321,7 +367,7 @@
                         <h4><b>Laode Alfian</b></h4>
                     </center><br>
                     <span class="glyphicon glyphicon-credit-card" aria-hidden="true"> ID0002</span><br>
-                    <span class="glyphicon glyphicon-phone" aria-hidden="true"> +62852xxxx5678</span><br>
+                    <span class="glyphicon glyphicon-phone" aria-hidden="true"> +6285394912010</span><br>
                     <span class="glyphicon glyphicon-road" aria-hidden="true"> Jl. ZZZZZZ No. 2</span>
                 </p>
             </div>

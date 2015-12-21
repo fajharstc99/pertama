@@ -1,5 +1,14 @@
 $(document).ready(function() {	
 	//konfig dialog button
+	$("#kosong1").click(function(){
+		$("#viewkosong1").modal('show');
+	});
+	$("#kosong2").click(function(){
+		$("#viewkosong2").modal('show');
+	});
+	$("#kosong3").click(function(){
+		$("#viewkosong3").modal('show');
+	});
 	$("#editprofil").click(function(){
 		$("#vieweditprofil").modal('show');
 	});
